@@ -1,0 +1,82 @@
+input:invalid:not(:placeholder-shown) {
+    border: 2px solid red !important;
+}
+
+input:invalid:not(:placeholder-shown) + [data-validation-text] {
+	color: red !important;
+	display: block;
+}
+
+body, html {
+    background-color: #F3F3F3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+	width: 400px;
+	margin: 50px auto 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #CECECE;
+}
+
+[data-validation-text] {
+    display: none;
+}
+
+label {
+    display: block;
+    margin: 15px 0px 5px 0px;
+
+    font-weight: bold;
+	font-size: 12px;
+	font-family: sans-serif;
+	color: #888;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #CECECE;
+}
+
+span {
+	font-family: sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+h1 {
+	font-size: 18px;
+	font-family: sans-serif;
+}
+
+.project-link {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    width: 100px;
+    height: 30px;
+
+    font-weight: bold;
+    border-color: white;
+    border-radius: 5px;    
+}
+
+.btn:hover {
+    background-color: #0985FF;
+}

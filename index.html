@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Validação com CSS + Regex</title>
+  </head>
+  <body>
+    <form>
+      <h1>Validações de formulário (CSS + Regex)</h1>
+
+      <label>Nome</label>
+      <input class="name-input" type="text" pattern=".{2,}" />
+      <span data-validation-text>Nome deve conter no mínimo duas letras.</span>
+
+      <label>Email</label>
+      <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" />
+      <span data-validation-text>Modelo de e-mail inválido.</span>
+
+      <label>Número de telefone</label>
+      <input type="text" pattern="([0-9]|\s){8,}" />
+      <span data-validation-text
+        >Número de telefone não deve conter letras e ter no mínimo 8
+        dígitos.</span
+      >
+      <div class="btn-div">
+        <button class="btn">VALIDAR</button>
+      </div>
+    </form>
+
+    <p class="project-link">
+      <a
+        href="https://github.com/JonathanFLima?tab=repositories"
+        target="_blank"
+        >Minha página no GitHub.</a
+      >
+    </p>
+    <p class="project-link">
+      <a href="https://codepen.io/helgesverre/pen/vWRevp" target="_blank"
+        >Projeto inspirado por este outro projeto</a
+      >.
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
